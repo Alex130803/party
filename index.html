@@ -473,15 +473,10 @@
       <div class="head">
         <div class="badge">
           <i class="fa-solid fa-traffic-light"></i>
-          Feb 14 • Valentine’s • Invite-only
+          Feb 14 • Valentine’s 
         </div>
 
         <h1 class="title">Traffic Light House Party</h1>
-
-        <p class="subtitle">
-          Limited capacity. Exact address is shared only with confirmed guests (a few hours before the party).
-          Wristbands at the door — pick your color.
-        </p>
       </div>
 
       <div class="grid">
@@ -490,40 +485,11 @@
           <div class="v">
             <div class="list">
               <div class="line">
-                <i class="fa-solid fa-location-dot"></i>
-                <div><b>Near RIT Campus</b> (address after confirmation)</div>
+                <div>Near RIT Campus</div>
               </div>
 
               <div class="line">
-                <i class="fa-solid fa-calendar-day"></i>
                 <div><b>Feb 14</b> • <b>10PM – Until It’s Over</b></div>
-              </div>
-
-              <div class="line">
-                <i class="fa-solid fa-ticket"></i>
-                <div><b>Limited spots</b> (first come, first confirmed)</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="k"><i class="fa-solid fa-list-check"></i> How It Works</div>
-          <div class="v">
-            <div class="list">
-              <div class="line">
-                <i class="fa-solid fa-paper-plane"></i>
-                <div>Send your request (IG + phone).</div>
-              </div>
-
-              <div class="line">
-                <i class="fa-solid fa-user-check"></i>
-                <div>We confirm spots + send payment instructions.</div>
-              </div>
-
-              <div class="line">
-                <i class="fa-solid fa-map-pin"></i>
-                <div>Address is shared a few hours before.</div>
               </div>
             </div>
           </div>
@@ -592,23 +558,9 @@
               <label for="name"><i class="fa-solid fa-user"></i> Name / Nickname</label>
               <input id="name" name="name" placeholder="e.g. Johnny" autocomplete="name" required />
             </div>
-
-            <div>
-              <label for="guests"><i class="fa-solid fa-users"></i> # of guests (incl. you)</label>
-              <select id="guests" name="guests" required>
-                <option value="" selected disabled>Select…</option>
-                <option>1</option><option>2</option><option>3</option><option>4</option>
-              </select>
-            </div>
           </div>
 
           <div class="row">
-            <div>
-              <label for="instagram"><i class="fa-brands fa-instagram"></i> Instagram @</label>
-              <input id="instagram" name="instagram" placeholder="@username" autocapitalize="none" autocomplete="off" required />
-              <div class="hint">We’ll DM confirmation + next steps.</div>
-            </div>
-
             <div>
               <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
               <input id="phone" name="phone" placeholder="(585) 123-4567" inputmode="tel" autocomplete="tel" required />
@@ -617,26 +569,6 @@
           </div>
 
           <div class="row">
-            <div>
-              <label for="light"><i class="fa-solid fa-traffic-light"></i> Wristband vibe (optional)</label>
-              <select id="light" name="traffic_light">
-                <option value="" selected>Prefer not to say</option>
-                <option value="red">Red — Taken</option>
-                <option value="yellow">Yellow — Try</option>
-                <option value="green">Green — Single</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="ref"><i class="fa-solid fa-user-plus"></i> Who invited you? (optional)</label>
-              <input id="ref" name="referred_by" placeholder="Friend’s name / IG" autocomplete="off" />
-            </div>
-          </div>
-
-          <div>
-            <label for="note"><i class="fa-solid fa-message"></i> Note (optional)</label>
-            <textarea id="note" name="note" placeholder="Anything we should know?"></textarea>
-          </div>
 
           <button id="submitBtn" class="btn" type="submit">
             <i class="fa-solid fa-paper-plane"></i>
@@ -662,7 +594,7 @@
         <div class="payments">
           <h3 class="section-title" style="margin:0">
             <i class="fa-solid fa-credit-card"></i>
-            Payment Methods (US-friendly)
+            Payment Methods
           </h3>
           <p class="section-sub" style="margin:8px 0 0 0">
             After approval, we’ll message the exact amount + which payment option to use.
@@ -671,7 +603,16 @@
           <div class="paygrid">
             <div class="payitem">
               <div class="payleft">
-                <div class="payname"><i class="fa-solid fa-dollar-sign"></i> Cash App</div>
+                <div class="payname">Cash</div>
+                <div class="paydesc">Cash at enterence</div>
+              </div>
+              <code class="handle">$DOLLAR$</code>
+            </div>
+
+          <div class="paygrid">
+            <div class="payitem">
+              <div class="payleft">
+                <div class="payname">Cash App</div>
                 <div class="paydesc">Send via $cashtag (fast).</div>
               </div>
               <code class="handle">$YOURCASHTAG</code>
@@ -679,53 +620,11 @@
 
             <div class="payitem">
               <div class="payleft">
-                <div class="payname"><i class="fa-solid fa-circle-dollar-to-slot"></i> Venmo</div>
+                <div class="payname">Venmo</div>
                 <div class="paydesc">Popular P2P payments.</div>
               </div>
               <code class="handle">@your-venmo</code>
             </div>
-
-            <div class="payitem">
-              <div class="payleft">
-                <div class="payname"><i class="fa-solid fa-building-columns"></i> Zelle</div>
-                <div class="paydesc">Send to phone/email (bank transfer).</div>
-              </div>
-              <code class="handle">zelle@email.com</code>
-            </div>
-
-            <div class="payitem">
-              <div class="payleft">
-                <div class="payname"><i class="fa-brands fa-paypal"></i> PayPal</div>
-                <div class="paydesc">Use PayPal.me link or email.</div>
-              </div>
-              <code class="handle">paypal.me/yourlink</code>
-            </div>
-
-            <div class="payitem">
-              <div class="payleft">
-                <div class="payname"><i class="fa-brands fa-apple"></i> Apple Cash</div>
-                <div class="paydesc">Apple Wallet users.</div>
-              </div>
-              <code class="handle">+1 (585) …</code>
-            </div>
-
-            <div class="payitem">
-              <div class="payleft">
-                <div class="payname"><i class="fa-brands fa-google"></i> Google Pay</div>
-                <div class="paydesc">Android users.</div>
-              </div>
-              <code class="handle">your@gmail.com</code>
-            </div>
-
-            <div class="payitem">
-              <div class="payleft">
-                <div class="payname"><i class="fa-brands fa-bitcoin"></i> Crypto</div>
-                <div class="paydesc">USDT / BTC / ETH / SOL — address after approval.</div>
-              </div>
-              <code class="handle">Request address</code>
-            </div>
-          </div>
-
           <div class="note">
             Pro tip: keep payment handles tied to your <b>event brand</b>, not your personal name, if you want to stay low-key.
           </div>
@@ -734,12 +633,6 @@
     </section>
 
   </div>
-
-  <!-- Mobile sticky CTA -->
-  <a class="mobile-cta" href="#invite">
-    <i class="fa-solid fa-pen-to-square"></i>
-    Request Invite
-  </a>
 
   <script>
     const form = document.getElementById('inviteForm');
